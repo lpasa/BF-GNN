@@ -14,5 +14,5 @@ A theoretical result on the expressiveness of the proposed models is also report
 We experimented our backpropagation-free graph convolutional neural architectures on commonly adopted node classification datasets, and show competitive performances compared to the backpropagation-based counterparts.
 
 ## Cite
-Accepted @ [ICDM2022](https://icdm22.cse.usf.edu/)
 
+L. Pasa, N. Navarin, W. Erb and A. Sperduti, "Backpropagation-free Graph Neural Networks," 2022 IEEE International Conference on Data Mining (ICDM), Orlando, FL, USA, 2022, pp. 388-397, doi: 10.1109/ICDM54844.2022.00049.
