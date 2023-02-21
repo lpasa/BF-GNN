@@ -13,6 +13,23 @@ We also compare the effectiveness of different alternatives for defining the con
 A theoretical result on the expressiveness of the proposed models is also reported.
 We experimented our backpropagation-free graph convolutional neural architectures on commonly adopted node classification datasets, and show competitive performances compared to the backpropagation-based counterparts.
 
+## Papers
+
+https://ieeexplore.ieee.org/abstract/document/10027635
+
 ## Cite
 
+If you find this code useful, please cite the following:
+
 L. Pasa, N. Navarin, W. Erb and A. Sperduti, "Backpropagation-free Graph Neural Networks," 2022 IEEE International Conference on Data Mining (ICDM), Orlando, FL, USA, 2022, pp. 388-397, doi: 10.1109/ICDM54844.2022.00049.
+
+>@INPROCEEDINGS{\
+  BFGNN2022,\
+  author={Pasa, Luca and Navarin, Nicolò and Erb, Wolfgang and Sperduti, Alessandro},\
+  booktitle={2022 IEEE International Conference on Data Mining (ICDM)},\
+  title={Backpropagation-free Graph Neural Networks},\
+  year={2022},\
+  pages={388-397},\
+  doi={10.1109/ICDM54844.2022.00049}\
+  }
+
