@@ -42,17 +42,3 @@ class LinearGatedProto(torch.nn.Module):
         gated_context_output = torch.sum(gated_context_output,dim=2)
 
         return gated_context_output
-
-class LinearSoftGated(LinearGatedProto):
-    def forward(self, X, context, min_val=-2, max_val=2):
-        all_context_output = torch.matmul(self.weight, X.float().T)
-        all_context_output = all_context_output.permute(2, 0, 1) + self.bias.repeat(X.shape[0], 1, 1)
-
-        all_dist = torch.cdist(self.prototypes, context, p=2).permute(2, 0, 1).detach()
-        all_dist=normalize(all_dist,p=1,dim=-1)
-
-        gated_context_output = all_context_output * all_dist
-        gated_context_output = torch.sum(gated_context_output, dim=2)
-
-
-        return torch.clip(gated_context_output, min_val, max_val)
